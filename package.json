@@ -1,0 +1,21 @@
+{
+  "name": "search-coding-challenge",
+  "version": "1.0.0",
+  "description": "Creating an app that seraches for people using NodeJS, Express and React",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "Minatallah Hisham",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2",
+    "webpack-dev-server": "^3.10.3"
+  }
+}
