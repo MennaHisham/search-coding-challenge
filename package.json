@@ -17,5 +17,10 @@
   "devDependencies": {
     "nodemon": "^2.0.2",
     "webpack-dev-server": "^3.10.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "client/*"
+    ]
   }
 }
