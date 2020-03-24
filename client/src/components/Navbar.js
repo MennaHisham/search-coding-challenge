@@ -8,7 +8,7 @@ const Navbar = props => {
 
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <img className="ml-5" height="64px" src="/logo.png" alt="Logo" />
+      <img className="ml-5" height="50px" src="/logo.png" alt="Logo" />
       <form className="form-inline my-2 my-lg-0">
         <input
           className="form-control mr-sm-2"
