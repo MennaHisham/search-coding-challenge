@@ -1,0 +1,19 @@
+services:
+  client:
+    build: ./client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - server
+  server:
+    env_file: ./server/.env
+    build: ./server
+    ports:
+      - "6677:6677"
+    depends_on:
+      - mongo
+  mongo:
+    env_file: ./server/.env
+    image: mongo
+    ports:
+      - "27017:27017"
