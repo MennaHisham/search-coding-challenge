@@ -6,17 +6,17 @@ import Footer from "./Footer";
 export default class FilterableDataTable extends Component {
   state = {
     data: this.props.data,
-    search: ""
+    search: "",
   };
 
-  updateSearchText = text => {
+  updateSearchText = (text) => {
     this.setState({ search: text }, () => {
       this.setState({
-        data: this.props.data.filter(data => {
+        data: this.props.data.filter((data) => {
           return data.name
             .toLowerCase()
             .includes(this.state.search.toLowerCase());
-        })
+        }),
       });
     });
   };
